@@ -46,12 +46,12 @@ class Pharmacy{
             else {
                 cout << "Không tồn tai: " << name_medicine << "!" <<endl;
             }
+            return 0;
         };
 
-        map<string, int> getAllMedicine () {
+        map<string, int> getAllMedicines () {
             return this->medicine;
         }
-
 
 };
 

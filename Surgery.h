@@ -37,15 +37,17 @@ class Surgery {
             else {
                 this->surgery.insert(make_pair(name, value));
             }
+
         }
 
-        int get_Surgery (string name) {
+        int get_Surgery_cost(string name) {
             if (checkSurgery(name)) {
                 return this->surgery[name];
             }
             else {
                 cout <<"Không tồn tại surgery: " << name << "!" << endl;
             }
+            return 0;
         }
 
         pair<string, int> getSurgery (string name) {
@@ -58,7 +60,7 @@ class Surgery {
             }
         }
 
-        map<string, int> getAllSurgery () {
+        map<string, int> getAllServices () {
             return this->surgery;
         }
 };
